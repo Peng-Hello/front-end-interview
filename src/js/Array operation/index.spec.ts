@@ -44,5 +44,22 @@ describe("操作 JS 数组方法", () => {
         ]);
       });
     });
+
+    describe("splice 方法", () => {
+      const temp = [...roster];
+      it("添加一个元素", () => {
+        temp.splice(temp.length, 0, "小黄");
+        expect(temp).toStrictEqual(["小明", "小红", "小黄"]);
+      });
+
+      let delItem: string[];
+      it("删除两个元素", () => {
+        delItem = temp.splice(1, 2);
+        expect(temp).toStrictEqual(["小明"]);
+      });
+      it("删除元素返回值", () => {
+        expect(delItem).toStrictEqual(["小红", "小黄"]);
+      });
+    });
   });
 });
