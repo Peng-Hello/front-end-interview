@@ -4,3 +4,6 @@
 
 ## 进入秘典
 [传送门](./markdown/index.md)
+
+## 温馨提示
+使用 Obsidian 查看笔记内容效果更佳哦！
